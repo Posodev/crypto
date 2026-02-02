@@ -64,9 +64,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const fetchProfile = async (userId: string) => {
     try {
       console.log('[AuthContext] Fetching profile for user:', userId);
-      
+
       // Add timeout to prevent infinite loading (reduced to 3 seconds)
-      const timeoutPromise = new Promise((_, reject) => 
+      const timeoutPromise = new Promise((_, reject) =>
         setTimeout(() => reject(new Error('Profile fetch timeout')), 3000)
       );
 
@@ -83,7 +83,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         console.error('[AuthContext] Error fetching profile:', error);
         console.error('[AuthContext] Error code:', error.code);
         console.error('[AuthContext] Error message:', error.message);
-        
+
         // If profile doesn't exist, try to get user email and create one
         if (error.code === 'PGRST116') {
           console.log('[AuthContext] Profile not found, attempting to create one');
@@ -92,7 +92,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             if (authUser?.email) {
               const isAdmin = authUser.email.toLowerCase() === 'warrenokumu98@gmail.com';
               console.log('[AuthContext] Creating profile with role:', isAdmin ? 'admin' : 'user');
-              
+
               // Generate referral code (simple hash-based)
               const hashString = authUser.email + userId;
               let hash = 0;
@@ -102,7 +102,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
                 hash = hash & hash; // Convert to 32bit integer
               }
               const refCode = Math.abs(hash).toString(36).toUpperCase().substring(0, 8);
-              
+
               const { data: newProfile, error: createError } = await supabase
                 .from('profiles')
                 .insert({
@@ -113,7 +113,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
                 })
                 .select()
                 .single();
-              
+
               if (createError) {
                 console.error('[AuthContext] Failed to create profile:', createError);
                 console.error('[AuthContext] This might be an RLS policy issue');
@@ -136,6 +136,19 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
           setProfile(null);
         }
       } else {
+        // Check if this is the admin email but has wrongs credentials
+        if (data.email === 'warrenokumu98@gmail.com' && data.role !== 'admin') {
+          console.log('[AuthContext] Fixing admin role for:', data.email);
+          const { error: updateError } = await supabase
+            .from('profiles')
+            .update({ role: 'admin' })
+            .eq('id', data.id);
+
+          if (!updateError) {
+            data.role = 'admin';
+          }
+        }
+
         console.log('[AuthContext] Profile fetched successfully:', {
           email: data.email,
           role: data.role,
@@ -173,7 +186,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         // Set user immediately - don't wait for profile
         setUser(data.user);
         setLoading(false);
-        
+
         // Fetch profile in background - don't block
         fetchProfile(data.user.id).catch((profileError) => {
           console.warn('[AuthContext] Profile fetch error, continuing anyway:', profileError);
@@ -193,7 +206,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const signUp = async (email: string, password: string, fullName?: string) => {
     console.log('[AuthContext] Attempting sign up with email:', email);
     setLoading(true);
-    
+
     try {
       const { data, error } = await supabase.auth.signUp({
         email: email.trim().toLowerCase(),
@@ -208,12 +221,12 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
       if (data.user) {
         console.log('[AuthContext] User created, ID:', data.user.id);
-        
+
         // The database trigger should automatically create the profile
         // But we'll update it with full_name if provided
         // Wait a moment for the trigger to complete
         await new Promise(resolve => setTimeout(resolve, 500));
-        
+
         if (fullName) {
           const isAdmin = email.toLowerCase() === 'warrenokumu98@gmail.com';
           const { error: upsertError } = await supabase.from('profiles').upsert(
@@ -233,7 +246,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             console.log('[AuthContext] Profile upserted successfully');
           }
         }
-        
+
         // Fetch the profile to ensure we have the latest data
         await fetchProfile(data.user.id);
       } else {
