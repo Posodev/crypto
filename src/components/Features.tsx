@@ -39,11 +39,11 @@ export const Features = () => {
     <section className="py-20 px-4 bg-background">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          Why Choose BTC Mining Base?
+          Why Choose Cryptoshaft Mining?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card 
+            <Card
               key={index}
               className="p-6 bg-gradient-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card hover:-translate-y-2 group"
             >

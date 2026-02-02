@@ -18,7 +18,7 @@ const Login = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    rememberMe: false, 
+    rememberMe: false,
   });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const [showPassword, setShowPassword] = useState(false);
@@ -28,10 +28,10 @@ const Login = () => {
   // Simplified and more reliable redirect logic
   useEffect(() => {
     if (authLoading) return; // Still loading auth state
-    
+
     if (user && !redirectedRef.current) {
       redirectedRef.current = true;
-      
+
       // Small delay to ensure state is consistent
       const timer = setTimeout(() => {
         if (profile) {
@@ -41,7 +41,7 @@ const Login = () => {
         }
         setIsSubmitting(false);
       }, 100);
-      
+
       return () => clearTimeout(timer);
     }
   }, [user, profile, isAdmin, authLoading, navigate]);
@@ -70,21 +70,21 @@ const Login = () => {
 
     try {
       const result = await signIn(formData.email.trim().toLowerCase(), formData.password);
-      
+
       // Check if signIn was successful
       if (!result) {
         throw new Error('Sign in failed - no response received');
       }
-      
+
       // Don't set isSubmitting to false here - let the useEffect handle redirect
       // The toast will be shown after successful redirect
-      
+
     } catch (error: any) {
       console.error('Sign in error:', error);
-      
+
       // Handle different error types
       let errorMessage = 'Failed to sign in. Please check your credentials and try again.';
-      
+
       if (error.message) {
         if (error.message.includes('Invalid login credentials')) {
           errorMessage = 'Invalid email or password. Please try again.';
@@ -94,7 +94,7 @@ const Login = () => {
           errorMessage = error.message;
         }
       }
-      
+
       setAuthError(errorMessage);
       setIsSubmitting(false);
     }
@@ -117,7 +117,7 @@ const Login = () => {
         <Card className="shadow-2xl border border-white/10 bg-[#050C1A]/80 backdrop-blur">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl font-bold text-white">Welcome Back</CardTitle>
-            <CardDescription className="text-white/60">Sign in to access your BTC Mining Base dashboard</CardDescription>
+            <CardDescription className="text-white/60">Sign in to access your Cryptoshaft Mining dashboard</CardDescription>
           </CardHeader>
 
           {authError && (
@@ -140,9 +140,8 @@ const Login = () => {
                     placeholder="you@example.com"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
-                    className={`pl-10 bg-white/5 text-white ${
-                      formErrors.email ? 'border-red-500/60 focus-visible:ring-red-500' : 'border-white/10 focus-visible:ring-primary'
-                    }`}
+                    className={`pl-10 bg-white/5 text-white ${formErrors.email ? 'border-red-500/60 focus-visible:ring-red-500' : 'border-white/10 focus-visible:ring-primary'
+                      }`}
                     disabled={isSubmitting}
                   />
                 </div>
@@ -161,11 +160,10 @@ const Login = () => {
                     placeholder="Enter your password"
                     value={formData.password}
                     onChange={(e) => handleInputChange('password', e.target.value)}
-                    className={`pl-10 pr-10 bg-white/5 text-white ${
-                      formErrors.password
+                    className={`pl-10 pr-10 bg-white/5 text-white ${formErrors.password
                         ? 'border-red-500/60 focus-visible:ring-red-500'
                         : 'border-white/10 focus-visible:ring-primary'
-                    }`}
+                      }`}
                     disabled={isSubmitting}
                   />
                   <button
@@ -227,7 +225,7 @@ const Login = () => {
         </Card>
 
         <div className="text-center text-xs text-white/40">
-          <p>Need help? Contact support@btcminingbase.com • PCI Compliant • ISO 27001 Certified</p>
+          <p>Need help? Contact support@cryptoshaftmining.com • PCI Compliant • ISO 27001 Certified</p>
         </div>
       </div>
     </div>

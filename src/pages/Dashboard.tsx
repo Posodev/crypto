@@ -29,14 +29,14 @@ import {
 // WhatsApp Icon Component
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
   </svg>
 );
 
 // Telegram Icon Component
 const TelegramIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.559z"/>
+    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.559z" />
   </svg>
 );
 import { toast } from '@/hooks/use-toast';
@@ -68,9 +68,9 @@ const translations = {
   en: {
     heroTitle: 'World-class security',
     heroBody1:
-      'As a wholly owned subsidiary of Digital Currency Group, we offer clients the opportunity to tap into our ecosystem. BTC Mining has entered a deep strategic partnership agreement with Coinbase, the largest cryptocurrency exchange in the United States.',
+      'As a wholly owned subsidiary of Digital Currency Group, we offer clients the opportunity to tap into our ecosystem. Cryptoshaft Mining has entered a deep strategic partnership agreement with Coinbase, the largest cryptocurrency exchange in the United States.',
     heroBody2:
-      'BTC Mining already supports direct transfers from Coinbase exchange accounts to BTC Mining accounts. If you are also a Coinbase client, you can choose Coinbase Payments when making payments.',
+      'Cryptoshaft Mining already supports direct transfers from Coinbase exchange accounts to Cryptoshaft Mining accounts. If you are also a Coinbase client, you can choose Coinbase Payments when making payments.',
     heroBody3: 'The funds are supervised by Coinbase, a third-party listed company.',
     depositCta: 'Deposit Funds',
     withdrawCta: 'Withdraw Now',
@@ -79,9 +79,9 @@ const translations = {
   es: {
     heroTitle: 'Seguridad de clase mundial',
     heroBody1:
-      'Como subsidiaria de Digital Currency Group, ofrecemos a los clientes la oportunidad de acceder a nuestro ecosistema. BTC Mining mantiene una alianza estratégica con Coinbase, el mayor intercambio de criptomonedas en Estados Unidos.',
+      'Como subsidiaria de Digital Currency Group, ofrecemos a los clientes la oportunidad de acceder a nuestro ecosistema. Cryptoshaft Mining mantiene una alianza estratégica con Coinbase, el mayor intercambio de criptomonedas en Estados Unidos.',
     heroBody2:
-      'BTC Mining ya admite transferencias directas desde cuentas de Coinbase a cuentas de BTC Mining. Si también eres cliente de Coinbase, puedes elegir Coinbase Payments al realizar pagos.',
+      'Cryptoshaft Mining ya admite transferencias directas desde cuentas de Coinbase a cuentas de BTC Mining. Si también eres cliente de Coinbase, puedes elegir Coinbase Payments al realizar pagos.',
     heroBody3: 'Los fondos están supervisados por Coinbase, una compañía que cotiza en bolsa.',
     depositCta: 'Depositar fondos',
     withdrawCta: 'Retirar ahora',
@@ -90,9 +90,9 @@ const translations = {
   fr: {
     heroTitle: 'Une sécurité de classe mondiale',
     heroBody1:
-      "En tant que filiale du Digital Currency Group, nous offrons aux clients l'opportunité d'accéder à notre écosystème. BTC Mining a conclu un partenariat stratégique avec Coinbase, le plus grand échange de crypto-monnaies aux États-Unis.",
+      "En tant que filiale du Digital Currency Group, nous offrons aux clients l'opportunité d'accéder à notre écosystème. Cryptoshaft Mining a conclu un partenariat stratégique avec Coinbase, le plus grand échange de crypto-monnaies aux États-Unis.",
     heroBody2:
-      'BTC Mining prend déjà en charge les transferts directs des comptes Coinbase vers les comptes BTC Mining. Si vous êtes également client de Coinbase, vous pouvez choisir Coinbase Payments lors de vos paiements.',
+      'Cryptoshaft Mining prend déjà en charge les transferts directs des comptes Coinbase vers les comptes BTC Mining. Si vous êtes également client de Coinbase, vous pouvez choisir Coinbase Payments lors de vos paiements.',
     heroBody3: 'Les fonds sont supervisés par Coinbase, une société cotée en bourse.',
     depositCta: 'Déposer des fonds',
     withdrawCta: 'Retirer maintenant',
@@ -101,9 +101,9 @@ const translations = {
   de: {
     heroTitle: 'Sicherheit auf Weltklasseniveau',
     heroBody1:
-      'Als Tochtergesellschaft der Digital Currency Group bieten wir Kunden Zugang zu unserem Ökosystem. BTC Mining hat eine strategische Partnerschaft mit Coinbase, der größten Kryptobörse in den USA.',
+      'Als Tochtergesellschaft der Digital Currency Group bieten wir Kunden Zugang zu unserem Ökosystem. Cryptoshaft Mining hat eine strategische Partnerschaft mit Coinbase, der größten Kryptobörse in den USA.',
     heroBody2:
-      'BTC Mining unterstützt bereits direkte Überweisungen von Coinbase-Konten auf BTC-Mining-Konten. Wenn Sie ebenfalls Coinbase-Kunde sind, können Sie Coinbase Payments für Zahlungen wählen.',
+      'Cryptoshaft Mining unterstützt bereits direkte Überweisungen von Coinbase-Konten auf BTC-Mining-Konten. Wenn Sie ebenfalls Coinbase-Kunde sind, können Sie Coinbase Payments für Zahlungen wählen.',
     heroBody3: 'Die Gelder werden von Coinbase, einem börsennotierten Unternehmen, überwacht.',
     depositCta: 'Geld einzahlen',
     withdrawCta: 'Jetzt abheben',
@@ -137,7 +137,7 @@ const Dashboard = () => {
       sessionStorage.removeItem('dashboard_view');
     }
   }, []);
-  
+
 
   // Auto-expand account menu if an account view is active
   useEffect(() => {
@@ -207,7 +207,7 @@ const Dashboard = () => {
 
       // Check if user is admin (check profile or email as fallback)
       const userIsAdmin = profile?.role === 'admin' || user.email?.toLowerCase() === 'warrenokumu98@gmail.com';
-      
+
       if (userIsAdmin && profile?.role === 'admin') {
         // Only redirect if we're sure they're admin (profile loaded)
         console.log('[Dashboard] User is admin, redirecting to admin dashboard');
@@ -224,23 +224,23 @@ const Dashboard = () => {
             navigate('/admin', { replace: true });
           }
         }, 1000);
-        
+
         // Start loading dashboard data while waiting
         setLoading(true);
         fetchData().catch(console.error);
-        
+
         return () => clearTimeout(checkAdminTimer);
       }
 
       // Normal user - load dashboard immediately
       setLoading(true);
       fetchData().catch(console.error);
-      
+
       // Set referral link (don't wait for profile)
       if (profile?.referral_code) {
-        setReferralLink(`https://btccryptomining?ref=${profile.referral_code}`);
+        setReferralLink(`https://cryptoshaftmining.com?ref=${profile.referral_code}`);
       } else if (user.email) {
-        setReferralLink(`https://btccryptomining?ref=${user.email.split('@')[0]}`);
+        setReferralLink(`https://cryptoshaftmining.com?ref=${user.email.split('@')[0]}`);
       }
     };
 
@@ -359,7 +359,7 @@ const Dashboard = () => {
     if (file) {
       const allowedExtensions = ['.jpg', '.jpeg', '.png', '.pdf', '.doc', '.docx'];
       const fileExtension = '.' + file.name.split('.').pop()?.toLowerCase();
-      
+
       if (allowedExtensions.includes(fileExtension)) {
         setSelectedFile(file);
         setFileName(file.name);
@@ -423,9 +423,9 @@ const Dashboard = () => {
             <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
               <span className="text-black font-bold text-lg">B</span>
             </div>
-            <span className="text-xl font-bold text-white">BTCMining</span>
+            <span className="text-xl font-bold text-white">Cryptoshaft Mining</span>
           </div>
-          
+
           {/* Center Navigation */}
           <nav className="hidden md:flex items-center gap-4 lg:gap-6">
             <button
@@ -433,30 +433,27 @@ const Dashboard = () => {
                 setActiveView('dashboard');
                 navigate('/dashboard');
               }}
-              className={`text-sm font-medium transition-colors ${
-                activeView === 'dashboard' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
-              }`}
+              className={`text-sm font-medium transition-colors ${activeView === 'dashboard' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
+                }`}
             >
               Home
             </button>
             <button
               onClick={() => setActiveView('team')}
-              className={`text-sm font-medium transition-colors ${
-                activeView === 'team' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
-              }`}
+              className={`text-sm font-medium transition-colors ${activeView === 'team' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
+                }`}
             >
               Team
             </button>
             <button
               onClick={() => setActiveView('about-us')}
-              className={`text-sm font-medium transition-colors ${
-                activeView === 'about-us' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
-              }`}
+              className={`text-sm font-medium transition-colors ${activeView === 'about-us' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
+                }`}
             >
               AboutUs
             </button>
           </nav>
-          
+
           {/* Right Side - Mobile Menu Button, Language and Logout */}
           <div className="flex items-center gap-2 lg:gap-4">
             {/* Mobile Menu Button */}
@@ -491,8 +488,8 @@ const Dashboard = () => {
       </header>
 
       <div className="flex">
-        <UserSidebar 
-          activeView={activeView} 
+        <UserSidebar
+          activeView={activeView}
           onViewChange={setActiveView}
           onSignOut={handleSignOut}
         />
@@ -579,7 +576,7 @@ const Dashboard = () => {
                   <li>
                     New users register with us. You will get 10% of the top-up amount. For example, You recommend user A, you can get 7% of the referral plan, A recommends B to buy plan, you can get 2% B recommends C to buy plan, you can get 1%
                   </li>
-                  <li>Mention Btc Mining. in your newsletter and use your affiliate link.</li>
+                  <li>Mention Cryptoshaft Mining in your newsletter and use your affiliate link.</li>
                   <li>
                     Invite your friends and earn USDT benefits when they complete their purchases. Keep an eye on how much you earn each week, get paid in USDT, and each of your affiliates will generate lifetime commissions.
                   </li>
@@ -699,11 +696,10 @@ const Dashboard = () => {
                           <td className="py-3 px-4">{log.actual_amount}</td>
                           <td className="py-3 px-4">{log.fee}</td>
                           <td className="py-3 px-4">
-                            <span className={`px-2 py-1 rounded text-xs ${
-                              log.status === 'completed' ? 'bg-green-500/20 text-green-400' :
+                            <span className={`px-2 py-1 rounded text-xs ${log.status === 'completed' ? 'bg-green-500/20 text-green-400' :
                               log.status === 'pending' ? 'bg-yellow-500/20 text-yellow-400' :
-                              'bg-red-500/20 text-red-400'
-                            }`}>
+                                'bg-red-500/20 text-red-400'
+                              }`}>
                               {log.status}
                             </span>
                           </td>
@@ -869,12 +865,11 @@ const Dashboard = () => {
                           <tr key={ticket.id} className="border-t border-white/5">
                             <td className="py-3 px-4">{ticket.subject}</td>
                             <td className="py-3 px-4 text-center">
-                              <span className={`px-2 py-1 rounded text-xs ${
-                                ticket.status === 'resolved' ? 'bg-green-500/20 text-green-400' :
+                              <span className={`px-2 py-1 rounded text-xs ${ticket.status === 'resolved' ? 'bg-green-500/20 text-green-400' :
                                 ticket.status === 'in_progress' ? 'bg-blue-500/20 text-blue-400' :
-                                ticket.status === 'closed' ? 'bg-gray-500/20 text-gray-400' :
-                                'bg-yellow-500/20 text-yellow-400'
-                              }`}>
+                                  ticket.status === 'closed' ? 'bg-gray-500/20 text-gray-400' :
+                                    'bg-yellow-500/20 text-yellow-400'
+                                }`}>
                                 {ticket.status}
                               </span>
                             </td>
@@ -882,7 +877,7 @@ const Dashboard = () => {
                               {ticket.updated_at ? new Date(ticket.updated_at).toLocaleDateString() : 'N/A'}
                             </td>
                             <td className="py-3 px-4 text-right">
-                              <button 
+                              <button
                                 onClick={() => {
                                   setSelectedTicket(ticket);
                                   setShowTicketDetail(true);
@@ -918,7 +913,7 @@ const Dashboard = () => {
                     ×
                   </button>
                 </div>
-                
+
                 <div className="p-6 space-y-6">
                   {/* Ticket Header Info */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -929,12 +924,11 @@ const Dashboard = () => {
                     <div>
                       <Label className="text-white/60 text-sm">Status</Label>
                       <div className="mt-1">
-                        <span className={`px-3 py-1 rounded text-xs inline-block ${
-                          selectedTicket.status === 'resolved' ? 'bg-green-500/20 text-green-400' :
+                        <span className={`px-3 py-1 rounded text-xs inline-block ${selectedTicket.status === 'resolved' ? 'bg-green-500/20 text-green-400' :
                           selectedTicket.status === 'in_progress' ? 'bg-blue-500/20 text-blue-400' :
-                          selectedTicket.status === 'closed' ? 'bg-gray-500/20 text-gray-400' :
-                          'bg-yellow-500/20 text-yellow-400'
-                        }`}>
+                            selectedTicket.status === 'closed' ? 'bg-gray-500/20 text-gray-400' :
+                              'bg-yellow-500/20 text-yellow-400'
+                          }`}>
                           {selectedTicket.status}
                         </span>
                       </div>
@@ -1185,7 +1179,7 @@ const Dashboard = () => {
           {activeView === 'profile' && (
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-white">Profile Setting</h2>
-              <form 
+              <form
                 onSubmit={async (e) => {
                   e.preventDefault();
                   try {
@@ -1206,9 +1200,9 @@ const Dashboard = () => {
                           city: profileData.city,
                         })
                         .eq('user_id', user.id);
-                      
+
                       if (error) throw error;
-                      
+
                       toast({
                         title: 'Success',
                         description: 'Profile updated successfully',
@@ -1479,14 +1473,14 @@ const Dashboard = () => {
                       const { error } = await supabase.auth.updateUser({
                         password: passwordData.newPassword
                       });
-                      
+
                       if (error) throw error;
-                      
+
                       toast({
                         title: 'Success',
                         description: 'Password changed successfully',
                       });
-                      
+
                       setPasswordData({
                         currentPassword: '',
                         newPassword: '',
@@ -1555,13 +1549,13 @@ const Dashboard = () => {
                   <h2 className="text-3xl font-bold text-white mb-2">Core Leadership</h2>
                   <div className="w-16 h-0.5 bg-cyan-400"></div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {/* Alexander Wright */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full border-4 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
                         alt="Alexander Wright"
                         className="w-full h-full object-cover"
                       />
@@ -1572,12 +1566,12 @@ const Dashboard = () => {
                       Former blockchain architect at Ethereum Foundation with 12+ years of experience in cryptocurrency mining operations. Alexander leads our strategic vision and technological innovation.
                     </p>
                   </div>
-                  
+
                   {/* Sophia Smith */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full border-4 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
                         alt="Sophia Smith"
                         className="w-full h-full object-cover"
                       />
@@ -1588,12 +1582,12 @@ const Dashboard = () => {
                       Computer science PhD with specialization in distributed systems. Sophia oversees our technological infrastructure and leads research into next-generation mining algorithms and hardware optimization.
                     </p>
                   </div>
-                  
+
                   {/* Michael Rodriguez */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full border-4 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
                         alt="Michael Rodriguez"
                         className="w-full h-full object-cover"
                       />
@@ -1634,8 +1628,8 @@ const Dashboard = () => {
                 </div>
                 <div className="relative">
                   <div className="aspect-square rounded-lg overflow-hidden border border-white/10">
-                    <img 
-                      src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=600&fit=crop" 
+                    <img
+                      src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=600&fit=crop"
                       alt="Cryptocurrency coins"
                       className="w-full h-full object-cover"
                     />
@@ -1649,13 +1643,13 @@ const Dashboard = () => {
                   <h2 className="text-3xl font-bold text-white mb-2">Our Team</h2>
                   <div className="w-16 h-0.5 bg-cyan-400"></div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {/* David Kim */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop"
                         alt="David Kim"
                         className="w-full h-full object-cover"
                       />
@@ -1666,12 +1660,12 @@ const Dashboard = () => {
                       Specializes in blockchain node architecture and mining pool optimization with 5+ years experience in the field.
                     </p>
                   </div>
-                  
+
                   {/* Abraham Johnson */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
                         alt="Abraham Johnson"
                         className="w-full h-full object-cover"
                       />
@@ -1682,12 +1676,12 @@ const Dashboard = () => {
                       Expert in ASIC design and thermodynamics optimization. Previously worked at Bitmain developing mining hardware.
                     </p>
                   </div>
-                  
+
                   {/* James Wilson */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
                         alt="James Wilson"
                         className="w-full h-full object-cover"
                       />
@@ -1698,12 +1692,12 @@ const Dashboard = () => {
                       Blockchain security expert with background in cryptography and secure wallet implementations.
                     </p>
                   </div>
-                  
+
                   {/* Jack Thompson */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop"
                         alt="Jack Thompson"
                         className="w-full h-full object-cover"
                       />
@@ -1714,12 +1708,12 @@ const Dashboard = () => {
                       Market intelligence expert focused on cryptocurrency trends and mining profitability analysis.
                     </p>
                   </div>
-                  
+
                   {/* Robert Williams */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
                         alt="Robert Williams"
                         className="w-full h-full object-cover"
                       />
@@ -1730,12 +1724,12 @@ const Dashboard = () => {
                       Logistics expert managing our global mining operations and ensuring seamless day-to-day functionality.
                     </p>
                   </div>
-                  
+
                   {/* Olivia Martinez */}
                   <div className="bg-[#111B2D]/70 rounded-lg p-6 border border-white/5">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-cyan-400 overflow-hidden">
-                      <img 
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" 
+                      <img
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
                         alt="Olivia Martinez"
                         className="w-full h-full object-cover"
                       />
@@ -1755,8 +1749,8 @@ const Dashboard = () => {
                 <div className="flex flex-wrap justify-center items-center gap-8">
                   {/* Bitcoin */}
                   <div className="w-16 h-16 rounded-full overflow-hidden bg-yellow-500 flex items-center justify-center p-2">
-                    <img 
-                      src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png" 
+                    <img
+                      src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png"
                       alt="Bitcoin"
                       className="w-full h-full object-contain"
                       onError={(e) => {
@@ -1767,8 +1761,8 @@ const Dashboard = () => {
                   </div>
                   {/* Ethereum */}
                   <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-800 flex items-center justify-center p-2">
-                    <img 
-                      src="https://assets.coingecko.com/coins/images/279/large/ethereum.png" 
+                    <img
+                      src="https://assets.coingecko.com/coins/images/279/large/ethereum.png"
                       alt="Ethereum"
                       className="w-full h-full object-contain"
                       onError={(e) => {
@@ -1779,8 +1773,8 @@ const Dashboard = () => {
                   </div>
                   {/* Avalanche */}
                   <div className="w-16 h-16 rounded-full overflow-hidden bg-red-600 flex items-center justify-center p-2">
-                    <img 
-                      src="https://assets.coingecko.com/coins/images/12559/large/avalanche-avax-logo.png" 
+                    <img
+                      src="https://assets.coingecko.com/coins/images/12559/large/avalanche-avax-logo.png"
                       alt="Avalanche"
                       className="w-full h-full object-contain"
                       onError={(e) => {
@@ -1791,8 +1785,8 @@ const Dashboard = () => {
                   </div>
                   {/* Cardano */}
                   <div className="w-16 h-16 rounded-full overflow-hidden bg-blue-900 flex items-center justify-center p-2">
-                    <img 
-                      src="https://assets.coingecko.com/coins/images/975/large/cardano.png" 
+                    <img
+                      src="https://assets.coingecko.com/coins/images/975/large/cardano.png"
                       alt="Cardano"
                       className="w-full h-full object-contain"
                       onError={(e) => {
@@ -1803,8 +1797,8 @@ const Dashboard = () => {
                   </div>
                   {/* Polkadot */}
                   <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-300 flex items-center justify-center p-2">
-                    <img 
-                      src="https://assets.coingecko.com/coins/images/12171/large/polkadot.png" 
+                    <img
+                      src="https://assets.coingecko.com/coins/images/12171/large/polkadot.png"
                       alt="Polkadot"
                       className="w-full h-full object-contain"
                       onError={(e) => {
@@ -1815,8 +1809,8 @@ const Dashboard = () => {
                   </div>
                   {/* Solana */}
                   <div className="w-16 h-16 rounded-lg overflow-hidden bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 flex items-center justify-center p-2">
-                    <img 
-                      src="https://assets.coingecko.com/coins/images/4128/large/solana.png" 
+                    <img
+                      src="https://assets.coingecko.com/coins/images/4128/large/solana.png"
                       alt="Solana"
                       className="w-full h-full object-contain"
                       onError={(e) => {
@@ -1852,12 +1846,12 @@ const Dashboard = () => {
                     { name: 'Chainlink', logo: 'https://logo.clearbit.com/chain.link', domain: 'chain.link' },
                     { name: 'MarketWatch', logo: 'https://logo.clearbit.com/marketwatch.com', domain: 'marketwatch.com' },
                   ].map((partner) => (
-                    <div 
-                      key={partner.name} 
+                    <div
+                      key={partner.name}
                       className="bg-white rounded p-4 flex items-center justify-center h-20 hover:bg-gray-50 transition relative"
                     >
-                      <img 
-                        src={partner.logo} 
+                      <img
+                        src={partner.logo}
                         alt={partner.name}
                         className="max-w-full max-h-full object-contain"
                         loading="lazy"
@@ -1888,35 +1882,35 @@ const Dashboard = () => {
           {activeView === 'about-us' && (
             <div className="space-y-6">
               <h1 className="text-3xl font-bold text-white mb-6">About Us</h1>
-              
+
               <div className="space-y-6">
                 {/* Mission Section */}
                 <div className="rounded-lg border border-white/5 bg-[#111B2D]/70 p-8">
                   <h2 className="text-2xl font-semibold text-white mb-4">Our Mission</h2>
                   <p className="text-white/80 text-lg leading-relaxed">
-                    BTCMining is one of the leading cryptocurrency mining platforms, offering cryptocurrency mining capacities in every range - for newcomers and experienced miners alike. Our mission is to make acquiring cryptocurrencies easy and fast for everyone.
+                    Cryptoshaft Mining is one of the leading cryptocurrency mining platforms, offering cryptocurrency mining capacities in every range - for newcomers and experienced miners alike. Our mission is to make acquiring cryptocurrencies easy and fast for everyone.
                   </p>
                 </div>
-                
+
                 {/* Company Overview */}
                 <div className="rounded-lg border border-white/5 bg-[#111B2D]/70 p-8">
                   <h2 className="text-2xl font-semibold text-white mb-4">Company Overview</h2>
                   <div className="space-y-4 text-white/80">
                     <p>
-                      As a wholly owned subsidiary of Digital Currency Group, we offer clients the opportunity to tap into our ecosystem. BTCMining has entered a deep strategic partnership agreement with Coinbase, the largest cryptocurrency exchange in the United States.
+                      As a wholly owned subsidiary of Digital Currency Group, we offer clients the opportunity to tap into our ecosystem. Cryptoshaft Mining has entered a deep strategic partnership agreement with Coinbase, the largest cryptocurrency exchange in the United States.
                     </p>
                     <p>
-                      BTCMining already supports direct transfers from Coinbase exchange accounts to BTCMining accounts. If you are also a Coinbase client, you can choose Coinbase Payments when making payments.
+                      Cryptoshaft Mining already supports direct transfers from Coinbase exchange accounts to Cryptoshaft Mining accounts. If you are also a Coinbase client, you can choose Coinbase Payments when making payments.
                     </p>
                     <p>
                       The funds are supervised by Coinbase, a third-party listed company, ensuring the highest level of security and trust for our users.
                     </p>
                   </div>
                 </div>
-                
+
                 {/* Why Choose Us */}
                 <div className="rounded-lg border border-white/5 bg-[#111B2D]/70 p-8">
-                  <h2 className="text-2xl font-semibold text-white mb-4">Why Choose BTCMining?</h2>
+                  <h2 className="text-2xl font-semibold text-white mb-4">Why Choose Cryptoshaft Mining?</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                     <div className="bg-[#0B1421] rounded-lg p-6 border border-white/5">
                       <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4">
@@ -1927,7 +1921,7 @@ const Dashboard = () => {
                         Our state-of-the-art mining facilities ensure optimal hash rates and maximum profitability.
                       </p>
                     </div>
-                    
+
                     <div className="bg-[#0B1421] rounded-lg p-6 border border-white/5">
                       <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4">
                         <Lock className="h-6 w-6 text-yellow-400" />
@@ -1937,7 +1931,7 @@ const Dashboard = () => {
                         Funds are supervised by Coinbase, providing enterprise-level security and peace of mind.
                       </p>
                     </div>
-                    
+
                     <div className="bg-[#0B1421] rounded-lg p-6 border border-white/5">
                       <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4">
                         <CircleDollarSign className="h-6 w-6 text-yellow-400" />
@@ -1947,7 +1941,7 @@ const Dashboard = () => {
                         Receive your mining rewards daily with transparent and reliable payment processing.
                       </p>
                     </div>
-                    
+
                     <div className="bg-[#0B1421] rounded-lg p-6 border border-white/5">
                       <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4">
                         <Headphones className="h-6 w-6 text-yellow-400" />
@@ -1959,7 +1953,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Statistics */}
                 <div className="rounded-lg border border-white/5 bg-[#111B2D]/70 p-8">
                   <h2 className="text-2xl font-semibold text-white mb-6">Our Achievements</h2>
@@ -1982,7 +1976,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Contact Section */}
                 <div className="rounded-lg border border-white/5 bg-[#111B2D]/70 p-8">
                   <h2 className="text-2xl font-semibold text-white mb-4">Get in Touch</h2>
@@ -1998,9 +1992,9 @@ const Dashboard = () => {
                     </div>
                     <div className="flex items-center gap-3">
                       <WhatsAppIcon className="h-5 w-5 text-yellow-400" />
-                      <a 
-                        href="https://wa.me/447449780973" 
-                        target="_blank" 
+                      <a
+                        href="https://wa.me/447449780973"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white/70 hover:text-yellow-400 transition-colors"
                       >
@@ -2009,9 +2003,9 @@ const Dashboard = () => {
                     </div>
                     <div className="flex items-center gap-3">
                       <TelegramIcon className="h-5 w-5 text-yellow-400" />
-                      <a 
-                        href="https://t.me/+dz1QVygXLJxlNzc0" 
-                        target="_blank" 
+                      <a
+                        href="https://t.me/+dz1QVygXLJxlNzc0"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white/70 hover:text-yellow-400 transition-colors"
                       >
@@ -2033,198 +2027,198 @@ const Dashboard = () => {
           {/* Dashboard View */}
           {activeView === 'dashboard' && (
             <>
-          <section className="rounded-2xl border border-white/5 bg-[#111B2D]/70 p-6 text-sm leading-relaxed text-white/80">
-            <h2 className="mb-3 text-lg font-semibold text-white">{copy.heroTitle}</h2>
-            <p>{copy.heroBody1}</p>
-            <p className="mt-3">{copy.heroBody2}</p>
-            <p className="mt-3">{copy.heroBody3}</p>
-          </section>
+              <section className="rounded-2xl border border-white/5 bg-[#111B2D]/70 p-6 text-sm leading-relaxed text-white/80">
+                <h2 className="mb-3 text-lg font-semibold text-white">{copy.heroTitle}</h2>
+                <p>{copy.heroBody1}</p>
+                <p className="mt-3">{copy.heroBody2}</p>
+                <p className="mt-3">{copy.heroBody3}</p>
+              </section>
 
-          <section className="grid gap-4 md:grid-cols-3">
-            <Card className="bg-gradient-to-br from-[#1B2436] to-[#131B2B] border-white/5">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-white">Balance</CardTitle>
-                <CardDescription className="text-yellow-400">Deposit</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-3xl font-bold">{formatCurrency(miningStats?.total_mined)}</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-gradient-to-br from-[#1B2436] to-[#131B2B] border-white/5">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-white">Referral Bonus</CardTitle>
-                <CardDescription className="text-yellow-400">My Referrals</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-3xl font-bold">0 USD</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-gradient-to-br from-[#1B2436] to-[#131B2B] border-white/5">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-white">BTC Mining</CardTitle>
-                <CardDescription className="text-yellow-400">Start Mining</CardDescription>
-              </CardHeader>
-              <CardContent className="flex flex-col gap-3">
-                <p className="text-white/70">Start your Miner</p>
-                <Button 
-                  className="w-fit bg-yellow-500 text-black hover:bg-yellow-400"
-                  onClick={() => navigate('/start-mining')}
-                >
-                  Start Mining
-                </Button>
-              </CardContent>
-            </Card>
-          </section>
+              <section className="grid gap-4 md:grid-cols-3">
+                <Card className="bg-gradient-to-br from-[#1B2436] to-[#131B2B] border-white/5">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-white">Balance</CardTitle>
+                    <CardDescription className="text-yellow-400">Deposit</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-3xl font-bold">{formatCurrency(miningStats?.total_mined)}</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-gradient-to-br from-[#1B2436] to-[#131B2B] border-white/5">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-white">Referral Bonus</CardTitle>
+                    <CardDescription className="text-yellow-400">My Referrals</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-3xl font-bold">0 USD</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-gradient-to-br from-[#1B2436] to-[#131B2B] border-white/5">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-white">Cryptoshaft Mining</CardTitle>
+                    <CardDescription className="text-yellow-400">Start Mining</CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex flex-col gap-3">
+                    <p className="text-white/70">Start your Miner</p>
+                    <Button
+                      className="w-fit bg-yellow-500 text-black hover:bg-yellow-400"
+                      onClick={() => navigate('/start-mining')}
+                    >
+                      Start Mining
+                    </Button>
+                  </CardContent>
+                </Card>
+              </section>
 
-          <section className="grid gap-6 md:grid-cols-3">
-            <Card className="border-white/5 bg-[#111B2D]/70">
-              <CardHeader>
-                <CardTitle className="text-white">Deposit</CardTitle>
-                <CardDescription className="text-white/60">Secure Coinbase gateway</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button 
-                  className="w-full bg-yellow-500 text-black hover:bg-yellow-400"
-                  onClick={() => navigate('/deposit')}
-                >
-                  {copy.depositCta}
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="border-white/5 bg-[#111B2D]/70">
-              <CardHeader>
-                <CardTitle className="text-white">Withdraw</CardTitle>
-                <CardDescription className="text-white/60">Request payouts seamlessly</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button 
-                  className="w-full bg-yellow-500 text-black hover:bg-yellow-400"
-                  onClick={() => navigate('/withdraw')}
-                >
-                  {copy.withdrawCta}
-                </Button>
-              </CardContent>
-            </Card>
-          </section>
+              <section className="grid gap-6 md:grid-cols-3">
+                <Card className="border-white/5 bg-[#111B2D]/70">
+                  <CardHeader>
+                    <CardTitle className="text-white">Deposit</CardTitle>
+                    <CardDescription className="text-white/60">Secure Coinbase gateway</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <Button
+                      className="w-full bg-yellow-500 text-black hover:bg-yellow-400"
+                      onClick={() => navigate('/deposit')}
+                    >
+                      {copy.depositCta}
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card className="border-white/5 bg-[#111B2D]/70">
+                  <CardHeader>
+                    <CardTitle className="text-white">Withdraw</CardTitle>
+                    <CardDescription className="text-white/60">Request payouts seamlessly</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <Button
+                      className="w-full bg-yellow-500 text-black hover:bg-yellow-400"
+                      onClick={() => navigate('/withdraw')}
+                    >
+                      {copy.withdrawCta}
+                    </Button>
+                  </CardContent>
+                </Card>
+              </section>
 
-          <section className="grid gap-6 lg:grid-cols-2">
-            <div className="space-y-4 rounded-2xl border border-white/5 bg-[#0F1A2B]/70 p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-sm text-white/60">Need help?</p>
-                  <h4 className="text-xl font-semibold text-white">Support Ticket</h4>
-                </div>
-                <Button 
-                  className="bg-yellow-500 text-black hover:bg-yellow-400" 
-                  onClick={() => {
-                    setActiveView('create-tickets');
-                    setSupportTicketExpanded(true);
-                  }}
-                >
-                  <MessageSquare className="mr-2 h-4 w-4" />
-                  New Ticket
-                </Button>
-              </div>
-
-              <div className="space-y-3">
-                {tickets.length === 0 ? (
-                  <p className="text-center text-white/50">No support tickets yet</p>
-                ) : (
-                  <>
-                    {tickets.slice(0, 3).map((ticket) => (
-                      <div key={ticket.id} className="rounded-xl border border-white/5 bg-[#101B2C] p-4 text-sm">
-                        <div className="mb-2 flex items-center justify-between">
-                          <p className="font-semibold text-white">{ticket.subject}</p>
-                          <span className="rounded-full bg-white/10 px-3 py-1 text-xs capitalize text-white/70">{ticket.status}</span>
-                        </div>
-                        <p className="text-white/70">{ticket.message}</p>
-                        <p className="mt-2 text-xs text-white/40">{new Date(ticket.created_at).toLocaleDateString()}</p>
-                      </div>
-                    ))}
-                    {tickets.length > 3 && (
-                      <Button
-                        variant="ghost"
-                        className="w-full text-yellow-400 hover:text-yellow-300"
-                        onClick={() => {
-                          setActiveView('all-tickets');
-                          setSupportTicketExpanded(true);
-                        }}
-                      >
-                        View All Tickets <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    )}
-                  </>
-                )}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-white/5 bg-[#0F1A2B]/70 p-6">
-              <h4 className="mb-4 text-xl font-semibold text-white">Account Information</h4>
-              <div className="space-y-4 text-sm text-white/80">
-                <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3">
-                  <p>Email</p>
-                  <p>{profile?.email}</p>
-                </div>
-                <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3">
-                  <p>Full Name</p>
-                  <p>{profile?.full_name || 'Not set'}</p>
-                </div>
-                <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3 capitalize">
-                  <p>Account Type</p>
-                  <p>{profile?.role}</p>
-                </div>
-                <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3">
-                  <p>Member Since</p>
-                  <p>{profile?.created_at ? new Date(profile.created_at).toLocaleDateString() : 'N/A'}</p>
-                </div>
-              </div>
-
-              <div className="mt-6 rounded-xl bg-[#101B2C] p-4">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-white/60">Need live help?</p>
-                    <p className="text-white">VIP Customers Only</p>
+              <section className="grid gap-6 lg:grid-cols-2">
+                <div className="space-y-4 rounded-2xl border border-white/5 bg-[#0F1A2B]/70 p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-white/60">Need help?</p>
+                      <h4 className="text-xl font-semibold text-white">Support Ticket</h4>
+                    </div>
+                    <Button
+                      className="bg-yellow-500 text-black hover:bg-yellow-400"
+                      onClick={() => {
+                        setActiveView('create-tickets');
+                        setSupportTicketExpanded(true);
+                      }}
+                    >
+                      <MessageSquare className="mr-2 h-4 w-4" />
+                      New Ticket
+                    </Button>
                   </div>
-                  <Button variant="outline" className="border-yellow-500 text-yellow-400 hover:bg-yellow-500/10">
-                    <Headphones className="mr-2 h-4 w-4" />
-                    Contact Support
-                  </Button>
-                </div>
-                <p className="mt-4 text-sm text-white/50">btcminingbase@gmail.com</p>
-                <p className="text-xs text-white/40">57 Kingfisher Grove, Willenhall, England, WV12 5HG (Company No. 15415402)</p>
-              </div>
-            </div>
-          </section>
 
-          <footer id="about-section" className="rounded-2xl border border-white/5 bg-[#0F1A2B]/70 p-6 text-sm text-white/70">
-            <div className="grid gap-6 lg:grid-cols-3">
-              <div>
-                <h5 className="text-lg font-semibold text-white">BTCMining</h5>
-                <p className="mt-2">
-                  BTC Mining is one of the leading cryptocurrency mining platforms, offering capacities in every range for newcomers and pros.
-                  Our mission is to make acquiring cryptocurrencies easy and fast for everyone.
-                </p>
-              </div>
-              <div>
-                <h5 className="text-lg font-semibold text-white">Quick Links</h5>
-                <ul className="mt-2 space-y-1">
-                  <li>Team</li>
-                  <li>AboutUs</li>
-                  <li>Plans</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="text-lg font-semibold text-white">Useful Links</h5>
-                <ul className="mt-2 space-y-1">
-                  <li>Usage Policy</li>
-                  <li>Cookie Policy</li>
-                  <li>Privacy Policy</li>
-                  <li>Terms of Service</li>
-                </ul>
-              </div>
-            </div>
-            <p className="mt-6 text-center text-xs text-white/40">Copyright © 2020–2025 BTC Mining All Rights Reserved</p>
-          </footer>
+                  <div className="space-y-3">
+                    {tickets.length === 0 ? (
+                      <p className="text-center text-white/50">No support tickets yet</p>
+                    ) : (
+                      <>
+                        {tickets.slice(0, 3).map((ticket) => (
+                          <div key={ticket.id} className="rounded-xl border border-white/5 bg-[#101B2C] p-4 text-sm">
+                            <div className="mb-2 flex items-center justify-between">
+                              <p className="font-semibold text-white">{ticket.subject}</p>
+                              <span className="rounded-full bg-white/10 px-3 py-1 text-xs capitalize text-white/70">{ticket.status}</span>
+                            </div>
+                            <p className="text-white/70">{ticket.message}</p>
+                            <p className="mt-2 text-xs text-white/40">{new Date(ticket.created_at).toLocaleDateString()}</p>
+                          </div>
+                        ))}
+                        {tickets.length > 3 && (
+                          <Button
+                            variant="ghost"
+                            className="w-full text-yellow-400 hover:text-yellow-300"
+                            onClick={() => {
+                              setActiveView('all-tickets');
+                              setSupportTicketExpanded(true);
+                            }}
+                          >
+                            View All Tickets <ArrowRight className="ml-2 h-4 w-4" />
+                          </Button>
+                        )}
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                <div className="rounded-2xl border border-white/5 bg-[#0F1A2B]/70 p-6">
+                  <h4 className="mb-4 text-xl font-semibold text-white">Account Information</h4>
+                  <div className="space-y-4 text-sm text-white/80">
+                    <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3">
+                      <p>Email</p>
+                      <p>{profile?.email}</p>
+                    </div>
+                    <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3">
+                      <p>Full Name</p>
+                      <p>{profile?.full_name || 'Not set'}</p>
+                    </div>
+                    <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3 capitalize">
+                      <p>Account Type</p>
+                      <p>{profile?.role}</p>
+                    </div>
+                    <div className="flex items-center justify-between rounded-xl bg-[#101B2C] p-3">
+                      <p>Member Since</p>
+                      <p>{profile?.created_at ? new Date(profile.created_at).toLocaleDateString() : 'N/A'}</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 rounded-xl bg-[#101B2C] p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm text-white/60">Need live help?</p>
+                        <p className="text-white">VIP Customers Only</p>
+                      </div>
+                      <Button variant="outline" className="border-yellow-500 text-yellow-400 hover:bg-yellow-500/10">
+                        <Headphones className="mr-2 h-4 w-4" />
+                        Contact Support
+                      </Button>
+                    </div>
+                    <p className="mt-4 text-sm text-white/50">btcminingbase@gmail.com</p>
+                    <p className="text-xs text-white/40">57 Kingfisher Grove, Willenhall, England, WV12 5HG (Company No. 15415402)</p>
+                  </div>
+                </div>
+              </section>
+
+              <footer id="about-section" className="rounded-2xl border border-white/5 bg-[#0F1A2B]/70 p-6 text-sm text-white/70">
+                <div className="grid gap-6 lg:grid-cols-3">
+                  <div>
+                    <h5 className="text-lg font-semibold text-white">Cryptoshaft Mining</h5>
+                    <p className="mt-2">
+                      Cryptoshaft Mining is one of the leading cryptocurrency mining platforms, offering capacities in every range for newcomers and pros.
+                      Our mission is to make acquiring cryptocurrencies easy and fast for everyone.
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="text-lg font-semibold text-white">Quick Links</h5>
+                    <ul className="mt-2 space-y-1">
+                      <li>Team</li>
+                      <li>AboutUs</li>
+                      <li>Plans</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="text-lg font-semibold text-white">Useful Links</h5>
+                    <ul className="mt-2 space-y-1">
+                      <li>Usage Policy</li>
+                      <li>Cookie Policy</li>
+                      <li>Privacy Policy</li>
+                      <li>Terms of Service</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="mt-6 text-center text-xs text-white/40">Copyright © 2020–2025 Cryptoshaft Mining All Rights Reserved</p>
+              </footer>
             </>
           )}
         </main>

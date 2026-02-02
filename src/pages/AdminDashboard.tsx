@@ -116,7 +116,7 @@ const AdminDashboard = () => {
         });
       } else {
         console.log('Tickets fetched:', allTickets?.length);
-        
+
         if (allTickets && allTickets.length > 0) {
           // Get user emails for tickets
           const ticketsWithEmails = await Promise.all(
@@ -237,7 +237,7 @@ const AdminDashboard = () => {
           <div className="flex items-center gap-2 sm:gap-3">
             <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-400" />
             <div>
-              <p className="text-xs sm:text-sm text-white/50">BTC Mining Base</p>
+              <p className="text-xs sm:text-sm text-white/50">Cryptoshaft Mining</p>
               <p className="text-base sm:text-lg font-semibold">Admin Control Center</p>
             </div>
           </div>
@@ -250,49 +250,45 @@ const AdminDashboard = () => {
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
-          
+
           <nav className={`${mobileMenuOpen ? 'flex' : 'hidden'} lg:flex flex-col lg:flex-row absolute lg:static top-full left-0 right-0 lg:top-auto lg:left-auto lg:right-auto bg-[#091328] lg:bg-transparent border-t lg:border-t-0 border-white/5 lg:border-0 p-4 lg:p-0 gap-4 lg:gap-6 text-sm font-medium z-50`}>
-            <button 
+            <button
               onClick={() => {
                 setActiveView('overview');
                 setMobileMenuOpen(false);
               }}
-              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${
-                activeView === 'overview' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
-              }`}
+              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${activeView === 'overview' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
+                }`}
             >
               <Home className="h-4 w-4" /> Overview
             </button>
-            <button 
+            <button
               onClick={() => {
                 setActiveView('users');
                 setMobileMenuOpen(false);
               }}
-              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${
-                activeView === 'users' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
-              }`}
+              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${activeView === 'users' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
+                }`}
             >
               <Users className="h-4 w-4" /> Users
             </button>
-            <button 
+            <button
               onClick={() => {
                 setActiveView('tickets');
                 setMobileMenuOpen(false);
               }}
-              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${
-                activeView === 'tickets' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
-              }`}
+              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${activeView === 'tickets' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
+                }`}
             >
               <MessageSquare className="h-4 w-4" /> Tickets
             </button>
-            <button 
+            <button
               onClick={() => {
                 setActiveView('analytics');
                 setMobileMenuOpen(false);
               }}
-              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${
-                activeView === 'analytics' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
-              }`}
+              className={`flex items-center gap-2 transition-colors py-2 lg:py-0 ${activeView === 'analytics' ? 'text-yellow-400' : 'text-white/70 hover:text-white'
+                }`}
             >
               <BarChart3 className="h-4 w-4" /> Analytics
             </button>
@@ -345,23 +341,23 @@ const AdminDashboard = () => {
           {/* Overview View */}
           {activeView === 'overview' && (
             <>
-          <div className="grid gap-6 rounded-2xl border border-white/5 bg-[#0B152F]/80 p-6 sm:grid-cols-2">
-            <div>
-              <h1 className="text-2xl font-semibold">Welcome back, {profile?.full_name || profile?.email}</h1>
-              <p className="mt-2 text-white/60">
-                Monitor global operations, manage customer support, and keep an eye on system security from one place. All stats are refreshed
-                every few minutes.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-[#0F1F3F] p-4 text-sm text-white/70">
-              <p className="text-white/50">System status</p>
-              <div className="mt-2 flex items-center gap-3 text-sm font-medium text-green-400">
-                <CheckCircle className="h-5 w-5" />
-                Operational
+              <div className="grid gap-6 rounded-2xl border border-white/5 bg-[#0B152F]/80 p-6 sm:grid-cols-2">
+                <div>
+                  <h1 className="text-2xl font-semibold">Welcome back, {profile?.full_name || profile?.email}</h1>
+                  <p className="mt-2 text-white/60">
+                    Monitor global operations, manage customer support, and keep an eye on system security from one place. All stats are refreshed
+                    every few minutes.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-[#0F1F3F] p-4 text-sm text-white/70">
+                  <p className="text-white/50">System status</p>
+                  <div className="mt-2 flex items-center gap-3 text-sm font-medium text-green-400">
+                    <CheckCircle className="h-5 w-5" />
+                    Operational
+                  </div>
+                  <p className="mt-3 text-xs text-white/40">Last sync: {new Date().toLocaleTimeString()}</p>
+                </div>
               </div>
-              <p className="mt-3 text-xs text-white/40">Last sync: {new Date().toLocaleTimeString()}</p>
-            </div>
-          </div>
 
               <div className="grid gap-6 lg:grid-cols-2">
                 <Card className="border-white/5 bg-[#0B152F]">
@@ -425,9 +421,8 @@ const AdminDashboard = () => {
                               <p className="text-xs text-white/50">{user.full_name || 'No name'}</p>
                             </div>
                             <span
-                              className={`rounded-full px-3 py-1 text-xs ${
-                                user.role === 'admin' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-white/10 text-white/60'
-                              }`}
+                              className={`rounded-full px-3 py-1 text-xs ${user.role === 'admin' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-white/10 text-white/60'
+                                }`}
                             >
                               {user.role}
                             </span>
@@ -470,9 +465,8 @@ const AdminDashboard = () => {
                         <td>{user.full_name || 'N/A'}</td>
                         <td>
                           <span
-                            className={`rounded-full px-3 py-1 text-xs ${
-                              user.role === 'admin' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-white/10 text-white/60'
-                            }`}
+                            className={`rounded-full px-3 py-1 text-xs ${user.role === 'admin' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-white/10 text-white/60'
+                              }`}
                           >
                             {user.role}
                           </span>
@@ -488,186 +482,185 @@ const AdminDashboard = () => {
 
           {/* Tickets View */}
           {activeView === 'tickets' && (
-          <div className="grid gap-6 lg:grid-cols-2">
-            <Card className="border-white/5 bg-[#0B152F]">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <MessageSquare className="h-5 w-5 text-yellow-400" />
-                  Support Tickets
-                </CardTitle>
-                <CardDescription className="text-white/50">Review customer issues and respond quickly</CardDescription>
-              </CardHeader>
+            <div className="grid gap-6 lg:grid-cols-2">
+              <Card className="border-white/5 bg-[#0B152F]">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MessageSquare className="h-5 w-5 text-yellow-400" />
+                    Support Tickets
+                  </CardTitle>
+                  <CardDescription className="text-white/50">Review customer issues and respond quickly</CardDescription>
+                </CardHeader>
                 <CardContent className="space-y-3 max-h-[600px] overflow-y-auto">
-                {tickets.length === 0 ? (
-                  <p className="text-center text-white/50">No tickets yet</p>
-                ) : (
-                  tickets.map((ticket) => (
-                    <div
-                      key={ticket.id}
-                      className={`cursor-pointer rounded-xl border border-white/10 p-4 transition hover:border-yellow-500 ${
-                        selectedTicket?.id === ticket.id ? 'border-yellow-500' : ''
-                      }`}
-                      onClick={() => {
-                        setSelectedTicket(ticket);
-                        setTicketResponse(ticket.admin_response || '');
-                        setTicketStatus(ticket.status);
-                      }}
-                    >
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <p className="font-semibold text-white">{ticket.subject}</p>
-                          <p className="text-xs text-white/50">From: {ticket.user_email}</p>
+                  {tickets.length === 0 ? (
+                    <p className="text-center text-white/50">No tickets yet</p>
+                  ) : (
+                    tickets.map((ticket) => (
+                      <div
+                        key={ticket.id}
+                        className={`cursor-pointer rounded-xl border border-white/10 p-4 transition hover:border-yellow-500 ${selectedTicket?.id === ticket.id ? 'border-yellow-500' : ''
+                          }`}
+                        onClick={() => {
+                          setSelectedTicket(ticket);
+                          setTicketResponse(ticket.admin_response || '');
+                          setTicketStatus(ticket.status);
+                        }}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <p className="font-semibold text-white">{ticket.subject}</p>
+                            <p className="text-xs text-white/50">From: {ticket.user_email}</p>
+                          </div>
+                          <span className="rounded-full bg-white/10 px-3 py-1 text-xs capitalize text-white/60">{ticket.status}</span>
                         </div>
-                        <span className="rounded-full bg-white/10 px-3 py-1 text-xs capitalize text-white/60">{ticket.status}</span>
-                      </div>
-                      <div className="mt-2 space-y-1">
-                        {/* Show original message preview */}
-                        <p className="text-sm text-white/70 line-clamp-2">
-                          {ticket.message?.split(/\n\n--- User Reply/)[0]?.trim() || ticket.message}
-                        </p>
-                        {/* Show reply count if there are user replies */}
-                        {ticket.message?.includes('--- User Reply') && (
-                          <p className="text-xs text-yellow-400/70">
-                            {ticket.message.split(/\n\n--- User Reply/).length - 1} user reply{ticket.message.split(/\n\n--- User Reply/).length - 1 !== 1 ? 's' : ''}
+                        <div className="mt-2 space-y-1">
+                          {/* Show original message preview */}
+                          <p className="text-sm text-white/70 line-clamp-2">
+                            {ticket.message?.split(/\n\n--- User Reply/)[0]?.trim() || ticket.message}
                           </p>
-                        )}
-                        {/* Show if admin has responded */}
-                        {ticket.admin_response && (
-                          <p className="text-xs text-green-400/70">✓ Admin responded</p>
-                        )}
+                          {/* Show reply count if there are user replies */}
+                          {ticket.message?.includes('--- User Reply') && (
+                            <p className="text-xs text-yellow-400/70">
+                              {ticket.message.split(/\n\n--- User Reply/).length - 1} user reply{ticket.message.split(/\n\n--- User Reply/).length - 1 !== 1 ? 's' : ''}
+                            </p>
+                          )}
+                          {/* Show if admin has responded */}
+                          {ticket.admin_response && (
+                            <p className="text-xs text-green-400/70">✓ Admin responded</p>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))
-                )}
-              </CardContent>
-            </Card>
+                    ))
+                  )}
+                </CardContent>
+              </Card>
 
-            <Card className="border-white/5 bg-[#0B152F]">
-              <CardHeader>
-                <CardTitle>Ticket Response</CardTitle>
-                <CardDescription className="text-white/50">
-                  {selectedTicket ? `Replying to ${selectedTicket.user_email}` : 'Select a ticket to start responding'}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                {selectedTicket ? (
-                  <div className="space-y-4">
-                    {/* Conversation History */}
-                    <div>
-                      <Label className="text-white/70 mb-2 block">Conversation History</Label>
-                      <div className="bg-[#0F1F3F] rounded-lg p-4 max-h-[300px] overflow-y-auto space-y-4">
-                        {/* Parse and display the full message with replies */}
-                        {(() => {
-                          const messageText = selectedTicket.message || '';
-                          const parts = messageText.split(/\n\n--- User Reply \(/);
-                          
-                          return (
-                            <>
-                              {/* Original Message */}
-                              <div className="space-y-2">
-                                <div className="flex items-center gap-2">
-                                  <span className="text-xs text-yellow-400 font-semibold">
-                                    {selectedTicket.user_email || 'User'}
-                                  </span>
-                                  <span className="text-xs text-white/40">
-                                    {new Date(selectedTicket.created_at).toLocaleString()}
-                                  </span>
-                                </div>
-                                <div className="bg-[#0B1421] rounded-lg p-3 text-sm text-white/90 whitespace-pre-wrap">
-                                  {parts[0].trim()}
-                                </div>
-                              </div>
+              <Card className="border-white/5 bg-[#0B152F]">
+                <CardHeader>
+                  <CardTitle>Ticket Response</CardTitle>
+                  <CardDescription className="text-white/50">
+                    {selectedTicket ? `Replying to ${selectedTicket.user_email}` : 'Select a ticket to start responding'}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  {selectedTicket ? (
+                    <div className="space-y-4">
+                      {/* Conversation History */}
+                      <div>
+                        <Label className="text-white/70 mb-2 block">Conversation History</Label>
+                        <div className="bg-[#0F1F3F] rounded-lg p-4 max-h-[300px] overflow-y-auto space-y-4">
+                          {/* Parse and display the full message with replies */}
+                          {(() => {
+                            const messageText = selectedTicket.message || '';
+                            const parts = messageText.split(/\n\n--- User Reply \(/);
 
-                              {/* User Replies */}
-                              {parts.slice(1).map((part, index) => {
-                                const match = part.match(/^([^)]+)\) ---\s*(.+)$/s);
-                                if (match) {
-                                  const timestamp = match[1];
-                                  const replyText = match[2].trim();
-                                  return (
-                                    <div key={index} className="space-y-2">
-                                      <div className="flex items-center gap-2">
-                                        <span className="text-xs text-yellow-400 font-semibold">
-                                          {selectedTicket.user_email || 'User'}
-                                        </span>
-                                        <span className="text-xs text-white/40">
-                                          {timestamp}
-                                        </span>
-                                      </div>
-                                      <div className="bg-[#0B1421] rounded-lg p-3 text-sm text-white/90 whitespace-pre-wrap">
-                                        {replyText}
-                                      </div>
-                                    </div>
-                                  );
-                                }
-                                return null;
-                              })}
-
-                              {/* Admin Response */}
-                              {selectedTicket.admin_response && (
+                            return (
+                              <>
+                                {/* Original Message */}
                                 <div className="space-y-2">
                                   <div className="flex items-center gap-2">
                                     <span className="text-xs text-yellow-400 font-semibold">
-                                      Admin
+                                      {selectedTicket.user_email || 'User'}
                                     </span>
                                     <span className="text-xs text-white/40">
-                                      Response
+                                      {new Date(selectedTicket.created_at).toLocaleString()}
                                     </span>
                                   </div>
-                                  <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 text-sm text-white/90 whitespace-pre-wrap">
-                                    {selectedTicket.admin_response}
+                                  <div className="bg-[#0B1421] rounded-lg p-3 text-sm text-white/90 whitespace-pre-wrap">
+                                    {parts[0].trim()}
                                   </div>
                                 </div>
-                              )}
-                            </>
-                          );
-                        })()}
-                      </div>
-                    </div>
 
-                    <div>
-                      <Label className="text-white/70">Status</Label>
-                      <Select value={ticketStatus} onValueChange={setTicketStatus}>
-                        <SelectTrigger className="bg-[#0F1F3F] text-white">
-                          <SelectValue placeholder="Choose status" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="open">Open</SelectItem>
-                          <SelectItem value="in_progress">In Progress</SelectItem>
-                          <SelectItem value="resolved">Resolved</SelectItem>
-                          <SelectItem value="closed">Closed</SelectItem>
-                        </SelectContent>
-                      </Select>
+                                {/* User Replies */}
+                                {parts.slice(1).map((part, index) => {
+                                  const match = part.match(/^([^)]+)\) ---\s*(.+)$/s);
+                                  if (match) {
+                                    const timestamp = match[1];
+                                    const replyText = match[2].trim();
+                                    return (
+                                      <div key={index} className="space-y-2">
+                                        <div className="flex items-center gap-2">
+                                          <span className="text-xs text-yellow-400 font-semibold">
+                                            {selectedTicket.user_email || 'User'}
+                                          </span>
+                                          <span className="text-xs text-white/40">
+                                            {timestamp}
+                                          </span>
+                                        </div>
+                                        <div className="bg-[#0B1421] rounded-lg p-3 text-sm text-white/90 whitespace-pre-wrap">
+                                          {replyText}
+                                        </div>
+                                      </div>
+                                    );
+                                  }
+                                  return null;
+                                })}
+
+                                {/* Admin Response */}
+                                {selectedTicket.admin_response && (
+                                  <div className="space-y-2">
+                                    <div className="flex items-center gap-2">
+                                      <span className="text-xs text-yellow-400 font-semibold">
+                                        Admin
+                                      </span>
+                                      <span className="text-xs text-white/40">
+                                        Response
+                                      </span>
+                                    </div>
+                                    <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 text-sm text-white/90 whitespace-pre-wrap">
+                                      {selectedTicket.admin_response}
+                                    </div>
+                                  </div>
+                                )}
+                              </>
+                            );
+                          })()}
+                        </div>
+                      </div>
+
+                      <div>
+                        <Label className="text-white/70">Status</Label>
+                        <Select value={ticketStatus} onValueChange={setTicketStatus}>
+                          <SelectTrigger className="bg-[#0F1F3F] text-white">
+                            <SelectValue placeholder="Choose status" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="open">Open</SelectItem>
+                            <SelectItem value="in_progress">In Progress</SelectItem>
+                            <SelectItem value="resolved">Resolved</SelectItem>
+                            <SelectItem value="closed">Closed</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div>
+                        <Label className="text-white/70">Response</Label>
+                        <Textarea
+                          className="bg-[#0F1F3F] text-white"
+                          rows={6}
+                          value={ticketResponse}
+                          onChange={(e) => setTicketResponse(e.target.value)}
+                          placeholder="Write your detailed response..."
+                        />
+                      </div>
+                      <Button className="w-full bg-yellow-500 text-black hover:bg-yellow-400" onClick={handleUpdateTicket}>
+                        Send Response
+                      </Button>
                     </div>
-                    <div>
-                      <Label className="text-white/70">Response</Label>
-                      <Textarea
-                        className="bg-[#0F1F3F] text-white"
-                        rows={6}
-                        value={ticketResponse}
-                        onChange={(e) => setTicketResponse(e.target.value)}
-                        placeholder="Write your detailed response..."
-                      />
+                  ) : (
+                    <div className="flex h-48 flex-col items-center justify-center text-sm text-white/50">
+                      <Headphones className="mb-3 h-8 w-8 text-white/30" />
+                      Select a ticket from the list to review and respond.
                     </div>
-                    <Button className="w-full bg-yellow-500 text-black hover:bg-yellow-400" onClick={handleUpdateTicket}>
-                      Send Response
-                    </Button>
-                  </div>
-                ) : (
-                  <div className="flex h-48 flex-col items-center justify-center text-sm text-white/50">
-                    <Headphones className="mb-3 h-8 w-8 text-white/30" />
-                    Select a ticket from the list to review and respond.
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          </div>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
           )}
 
           {/* Analytics View */}
           {activeView === 'analytics' && (
             <div className="space-y-6">
-          <Card className="border-white/5 bg-[#0B152F]">
+              <Card className="border-white/5 bg-[#0B152F]">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <BarChart3 className="h-5 w-5 text-yellow-400" />
@@ -756,7 +749,7 @@ const AdminDashboard = () => {
                           <span className="text-yellow-400 font-semibold">
                             {allStats.filter((s) => s.total_mined > 0).length}
                           </span>
-              </div>
+                        </div>
                         <div className="flex items-center justify-between">
                           <span className="text-white/70 text-sm">Average Daily Earnings</span>
                           <span className="text-yellow-400 font-semibold">
@@ -764,13 +757,13 @@ const AdminDashboard = () => {
                               ? (allStats.reduce((sum, s) => sum + s.daily_earnings, 0) / allStats.length).toFixed(4)
                               : '0.0000'}{' '}
                             BTC
-                        </span>
+                          </span>
                         </div>
                       </div>
                     </div>
                   </div>
-            </CardContent>
-          </Card>
+                </CardContent>
+              </Card>
             </div>
           )}
         </section>
