@@ -752,7 +752,7 @@ const Deposit = () => {
                               <img
                                 src={getQRCodeImage()}
                                 alt="Payment QR"
-                                className="h-48 w-48 object-contain"
+                                className="h-64 w-64 object-contain bg-white p-2 rounded-lg"
                               />
                             );
                           })()}
@@ -874,10 +874,10 @@ const Deposit = () => {
                           <td className="px-4 py-4">
                             <span
                               className={`rounded-full px-3 py-1 text-xs capitalize ${deposit.status === 'completed'
-                                  ? 'bg-green-500/20 text-green-400'
-                                  : deposit.status === 'pending' || deposit.status === 'processing'
-                                    ? 'bg-yellow-500/20 text-yellow-400'
-                                    : 'bg-red-500/20 text-red-400'
+                                ? 'bg-green-500/20 text-green-400'
+                                : deposit.status === 'pending' || deposit.status === 'processing'
+                                  ? 'bg-yellow-500/20 text-yellow-400'
+                                  : 'bg-red-500/20 text-red-400'
                                 }`}
                             >
                               {deposit.status}
