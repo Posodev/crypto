@@ -423,11 +423,11 @@ const StartMining = () => {
   ];
 
   const fallbackAddresses: Record<GatewayValue, string> = {
-    btc: 'bc1q8wchmdhvxatty6evk8gjh0cfg262jr0tuwkn9x',
-    'usdt-trc20': 'TGtTjW3Vso5Rcxx3BGcpQmeq72MMz2MxZ1',
-    'usdt-erc20': '0x2b5E6d86F7C9b8e64cD753e55a18749f4F268F05',
-    usdc: '0x2b5E6d86F7C9b8e64cD753e55a18749f4F268F05',
-    eth: '0x2b5E6d86F7C9b8e64cD753e55a18749f4F268F05',
+    btc: 'bc1pp5dd7jlzgza8h4gggecu7zphgnp0jfg322j5smn869uptnaclgwqsx9tsv',
+    'usdt-trc20': 'TFJ9N2U1Mbk7b9zAqV3AHVg5mbyEG3JQNb',
+    'usdt-erc20': '0x3A6D7EB38dFdB9635109793d27186951475ac976',
+    usdc: '0x3A6D7EB38dFdB9635109793d27186951475ac976',
+    eth: '0x3A6D7EB38dFdB9635109793d27186951475ac976',
   };
 
   const selectedGatewayOption = useMemo(
@@ -1241,12 +1241,12 @@ const StartMining = () => {
                           <td className="py-4 px-4 text-white/80">{plan.remainingDays}</td>
                           <td className="py-4 px-4">
                             <span className={`px-3 py-1 rounded-full text-xs font-medium ${plan.status === 'pending'
-                                ? 'bg-orange-500/20 text-orange-400 border border-orange-500/50'
-                                : plan.status === 'active'
-                                  ? 'bg-green-500/20 text-green-400'
-                                  : plan.status === 'completed'
-                                    ? 'bg-blue-500/20 text-blue-400'
-                                    : 'bg-gray-500/20 text-gray-400'
+                              ? 'bg-orange-500/20 text-orange-400 border border-orange-500/50'
+                              : plan.status === 'active'
+                                ? 'bg-green-500/20 text-green-400'
+                                : plan.status === 'completed'
+                                  ? 'bg-blue-500/20 text-blue-400'
+                                  : 'bg-gray-500/20 text-gray-400'
                               }`}>
                               {plan.status.charAt(0).toUpperCase() + plan.status.slice(1)}
                             </span>
