@@ -27,7 +27,7 @@ const TelegramIcon = ({ className }: { className?: string }) => (
 const LINKS = [
   {
     label: "Chat on WhatsApp",
-    href: "https://wa.me/447782206891",
+    href: "https://wa.me/447412896700",
     icon: WhatsAppIcon,
     glow: "from-green-400/60 to-emerald-500/40",
   },

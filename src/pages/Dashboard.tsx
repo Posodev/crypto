@@ -715,184 +715,30 @@ const Dashboard = () => {
             </div>
           )}
 
-          {/* Create Tickets Page */}
+          {/* Create Tickets Page - disabled in favor of Tawk.to live chat */}
           {activeView === 'create-tickets' && (
             <div className="space-y-6">
-              <div className="flex items-center justify-between">
-                <h2 className="text-2xl font-semibold text-white">Support Tickets</h2>
-                <Button
-                  onClick={() => setActiveView('all-tickets')}
-                  className="bg-yellow-500 text-black hover:bg-yellow-400"
-                >
-                  <List className="h-4 w-4 mr-2" />
-                  My Support Ticket
-                </Button>
+              <div className="rounded-lg border border-yellow-500/40 bg-[#111B2D]/80 p-6 text-center space-y-4">
+                <h2 className="text-2xl font-semibold text-white">Support via Live Chat</h2>
+                <p className="text-white/70 max-w-xl mx-auto">
+                  We&apos;ve upgraded our support experience. To get help, please use the
+                  live chat widget powered by <span className="text-yellow-400 font-semibold">Tawk.to</span>
+                  in the bottom corner of the website. Our team is available there 24/7.
+                </p>
               </div>
-
-              <form onSubmit={handleCreateTicket} className="rounded-lg border border-white/5 bg-[#111B2D]/70 p-6 space-y-4">
-                <div className="space-y-2">
-                  <Label className="text-white/70">
-                    Name <span className="text-yellow-400">*</span>
-                  </Label>
-                  <Input
-                    value={ticketName}
-                    onChange={(e) => setTicketName(e.target.value)}
-                    required
-                    className="bg-[#0B1421] text-white border-white/10"
-                    placeholder="Enter your name"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label className="text-white/70">
-                    Email address <span className="text-yellow-400">*</span>
-                  </Label>
-                  <Input
-                    type="email"
-                    value={ticketEmail}
-                    onChange={(e) => setTicketEmail(e.target.value)}
-                    required
-                    className="bg-[#0B1421] text-white border-white/10"
-                    placeholder="Enter your email"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label className="text-white/70">Subject</Label>
-                  <Input
-                    value={ticketSubject}
-                    onChange={(e) => setTicketSubject(e.target.value)}
-                    className="bg-[#0B1421] text-white border-white/10"
-                    placeholder="Subject"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label className="text-white/70">Message</Label>
-                  <Textarea
-                    value={ticketMessage}
-                    onChange={(e) => setTicketMessage(e.target.value)}
-                    rows={6}
-                    className="bg-[#0B1421] text-white border-white/10"
-                    placeholder="Enter your message"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label className="text-white/70">Attach File</Label>
-                  <div className="flex items-center gap-2">
-                    <label className="cursor-pointer">
-                      <input
-                        type="file"
-                        onChange={handleFileChange}
-                        accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"
-                        className="hidden"
-                        id="file-upload"
-                      />
-                      <Button
-                        type="button"
-                        variant="outline"
-                        className="border-white/20 text-white/80 hover:bg-white/10"
-                        onClick={() => document.getElementById('file-upload')?.click()}
-                      >
-                        Choose File
-                      </Button>
-                    </label>
-                    <span className="text-white/70">{fileName}</span>
-                    {selectedFile && (
-                      <Button
-                        type="button"
-                        onClick={() => {
-                          setSelectedFile(null);
-                          setFileName('No file chosen');
-                        }}
-                        className="bg-yellow-500 text-black hover:bg-yellow-400 p-2 h-8 w-8"
-                      >
-                        <Plus className="h-4 w-4" />
-                      </Button>
-                    )}
-                  </div>
-                  <p className="text-xs text-white/50">
-                    Allowed File Extensions: .jpg, .jpeg, .png, .pdf, .doc, .docx
-                  </p>
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-yellow-500 text-black hover:bg-yellow-400"
-                >
-                  <Send className="h-4 w-4 mr-2" />
-                  Submit
-                </Button>
-              </form>
             </div>
           )}
 
-          {/* All Tickets Page */}
+          {/* All Tickets Page - disabled in favor of Tawk.to live chat */}
           {activeView === 'all-tickets' && (
             <div className="space-y-6">
-              <div className="flex items-center justify-between">
-                <h2 className="text-2xl font-semibold text-white">Support Tickets</h2>
-                <Button
-                  onClick={() => setActiveView('create-tickets')}
-                  className="bg-yellow-500 text-black hover:bg-yellow-400"
-                >
-                  <Plus className="h-4 w-4 mr-2" />
-                  New Ticket
-                </Button>
-              </div>
-
-              <div className="rounded-lg border border-white/5 bg-[#111B2D]/70 p-6">
-                <div className="overflow-x-auto">
-                  <table className="w-full text-left text-sm">
-                    <thead className="bg-[#0B1421] text-white">
-                      <tr>
-                        <th className="py-3 px-4 text-left">Subject</th>
-                        <th className="py-3 px-4 text-center">Status</th>
-                        <th className="py-3 px-4 text-center">Last Reply</th>
-                        <th className="py-3 px-4 text-right">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-white/80">
-                      {tickets.length === 0 ? (
-                        <tr>
-                          <td colSpan={4} className="py-8 text-center text-white/50">
-                            No tickets found
-                          </td>
-                        </tr>
-                      ) : (
-                        tickets.map((ticket) => (
-                          <tr key={ticket.id} className="border-t border-white/5">
-                            <td className="py-3 px-4">{ticket.subject}</td>
-                            <td className="py-3 px-4 text-center">
-                              <span className={`px-2 py-1 rounded text-xs ${ticket.status === 'resolved' ? 'bg-green-500/20 text-green-400' :
-                                ticket.status === 'in_progress' ? 'bg-blue-500/20 text-blue-400' :
-                                  ticket.status === 'closed' ? 'bg-gray-500/20 text-gray-400' :
-                                    'bg-yellow-500/20 text-yellow-400'
-                                }`}>
-                                {ticket.status}
-                              </span>
-                            </td>
-                            <td className="py-3 px-4 text-center">
-                              {ticket.updated_at ? new Date(ticket.updated_at).toLocaleDateString() : 'N/A'}
-                            </td>
-                            <td className="py-3 px-4 text-right">
-                              <button
-                                onClick={() => {
-                                  setSelectedTicket(ticket);
-                                  setShowTicketDetail(true);
-                                }}
-                                className="text-yellow-400 hover:text-yellow-300 cursor-pointer"
-                              >
-                                View
-                              </button>
-                            </td>
-                          </tr>
-                        ))
-                      )}
-                    </tbody>
-                  </table>
-                </div>
+              <div className="rounded-lg border border-yellow-500/40 bg-[#111B2D]/80 p-6 text-center space-y-4">
+                <h2 className="text-2xl font-semibold text-white">Support Tickets Disabled</h2>
+                <p className="text-white/70 max-w-xl mx-auto">
+                  The old support ticket system has been disabled. For any questions or issues,
+                  please reach out through the <span className="text-yellow-400 font-semibold">Tawk.to</span> live
+                  chat widget on this site.
+                </p>
               </div>
             </div>
           )}
@@ -1993,12 +1839,12 @@ const Dashboard = () => {
                     <div className="flex items-center gap-3">
                       <WhatsAppIcon className="h-5 w-5 text-yellow-400" />
                       <a
-                        href="https://wa.me/447449780973"
+                        href="https://wa.me/447412896700"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white/70 hover:text-yellow-400 transition-colors"
                       >
-                        +44 7449 780973
+                        +44 7412 896700
                       </a>
                     </div>
                     <div className="flex items-center gap-3">
