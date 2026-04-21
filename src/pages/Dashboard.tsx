@@ -715,29 +715,57 @@ const Dashboard = () => {
             </div>
           )}
 
-          {/* Create Tickets Page - disabled in favor of Tawk.to live chat */}
+          {/* Create Tickets Page - contact via WhatsApp / email */}
           {activeView === 'create-tickets' && (
             <div className="space-y-6">
               <div className="rounded-lg border border-yellow-500/40 bg-[#111B2D]/80 p-6 text-center space-y-4">
-                <h2 className="text-2xl font-semibold text-white">Support via Live Chat</h2>
+                <h2 className="text-2xl font-semibold text-white">Contact Support</h2>
                 <p className="text-white/70 max-w-xl mx-auto">
-                  We&apos;ve upgraded our support experience. To get help, please use the
-                  live chat widget powered by <span className="text-yellow-400 font-semibold">Tawk.to</span>
-                  in the bottom corner of the website. Our team is available there 24/7.
+                  For help, message us on{" "}
+                  <a
+                    href="https://wa.me/447412896700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-yellow-400 font-semibold hover:text-yellow-300 underline"
+                  >
+                    WhatsApp (+44 7412 896700)
+                  </a>
+                  {" "}or email{" "}
+                  <a
+                    href="mailto:btcminingbase@gmail.com"
+                    className="text-yellow-400 font-semibold hover:text-yellow-300 underline"
+                  >
+                    btcminingbase@gmail.com
+                  </a>
+                  .
                 </p>
               </div>
             </div>
           )}
 
-          {/* All Tickets Page - disabled in favor of Tawk.to live chat */}
+          {/* All Tickets Page - contact via WhatsApp / email */}
           {activeView === 'all-tickets' && (
             <div className="space-y-6">
               <div className="rounded-lg border border-yellow-500/40 bg-[#111B2D]/80 p-6 text-center space-y-4">
-                <h2 className="text-2xl font-semibold text-white">Support Tickets Disabled</h2>
+                <h2 className="text-2xl font-semibold text-white">Support Tickets</h2>
                 <p className="text-white/70 max-w-xl mx-auto">
-                  The old support ticket system has been disabled. For any questions or issues,
-                  please reach out through the <span className="text-yellow-400 font-semibold">Tawk.to</span> live
-                  chat widget on this site.
+                  The in-dashboard ticket list is not available here. For questions or issues, please use{" "}
+                  <a
+                    href="https://wa.me/447412896700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-yellow-400 font-semibold hover:text-yellow-300 underline"
+                  >
+                    WhatsApp
+                  </a>
+                  {" "}or{" "}
+                  <a
+                    href="mailto:btcminingbase@gmail.com"
+                    className="text-yellow-400 font-semibold hover:text-yellow-300 underline"
+                  >
+                    btcminingbase@gmail.com
+                  </a>
+                  .
                 </p>
               </div>
             </div>
@@ -1836,17 +1864,15 @@ const Dashboard = () => {
                         btcminingbase@gmail.com
                       </a>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <WhatsAppIcon className="h-5 w-5 text-yellow-400" />
-                      <a
-                        href="https://wa.me/447412896700"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white/70 hover:text-yellow-400 transition-colors"
-                      >
-                        +44 7412 896700
-                      </a>
-                    </div>
+                    <a
+                      href="https://wa.me/447412896700"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-white/70 hover:text-yellow-400 transition-colors"
+                    >
+                      <WhatsAppIcon className="h-5 w-5 text-yellow-400 shrink-0" />
+                      +44 7412 896700
+                    </a>
                     <div className="flex items-center gap-3">
                       <TelegramIcon className="h-5 w-5 text-yellow-400" />
                       <a

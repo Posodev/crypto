@@ -105,14 +105,14 @@ export const Footer = () => {
                   support@cryptoshaftmining.com
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <WhatsAppIcon className="h-5 w-5 text-yellow-400" />
+              <li>
                 <a
                   href="https://wa.me/447412896700"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-yellow-400 transition-colors"
+                  className="flex items-center gap-3 text-white/70 hover:text-yellow-400 transition-colors"
                 >
+                  <WhatsAppIcon className="h-5 w-5 text-yellow-400 shrink-0" />
                   +44 7412 896700
                 </a>
               </li>
